@@ -76,8 +76,6 @@ YOUR SOLUTION HERE
 
 ### Exercise 3
 
-Combine `fueleconomy::vehicles` and `fueleconomy::common` to find the records for only the most common models.
-
 What weather conditions make it more likely to see a departure delay?
 
 ::: {.callout-tip icon="false"}
