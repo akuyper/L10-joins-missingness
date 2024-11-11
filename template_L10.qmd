@@ -2,18 +2,24 @@
 title: "L10 Joins & Missingness"
 subtitle: "Data Science 1 with R (STAT 301-1)"
 author: "YOUR NAME"
+pagetitle: "L10 YOUR NAME"
+date: today
 
 format:
   html:
     toc: true
+    toc-depth: 4
+    toc-location: left
     embed-resources: true
-    code-fold: show
+    code-fold: false
     link-external-newwindow: true
 
 execute:
   warning: false
-  
-from: markdown+emoji 
+
+from: markdown+emoji
+reference-location: margin
+citation-location: margin  
 ---
 
 ::: {.callout-tip icon=false}
@@ -39,7 +45,6 @@ You should always begin by loading all necessary packages towards the beginning 
 
 ```{r}
 #| label: load-pkgs
-#| code-fold: false
 
 # Loading package(s)
 
@@ -114,6 +119,12 @@ YOUR SOLUTION HERE
 
 ## Case Study 1
 
+::: {.callout-warning}
+
+The work for this case study is not aimed at producing something for a boss. It is aimed at practicing examining missingness and joins. Therefore, providing and displaying code is expected. Raw tibble output is acceptable (meaning, you do not need to use `kable()` to make tables).
+
+:::
+
 ### Exploration 1
 
 Use `rankings_2021` and `rankings_2022` to answer the following questions^[This data was obtained from [Times Higher Education](https://www.timeshighereducation.com/rankings/united-states/2022#!/length/-1/sort_by/rank/sort_order/asc/cols/scores) and [College Scorecard](https://collegescorecard.ed.gov/data)]:
@@ -148,6 +159,12 @@ YOUR SOLUTION HERE
 
 
 ## Case Study 2
+
+::: {.callout-warning}
+
+The work for this case study is not aimed at producing something for a boss. It is aimed at practicing examining missingness and joins. Therefore, providing and displaying code is expected. Raw tibble output is acceptable (meaning, you do not need to use `kable()` to make tables).
+
+:::
 
 Add a new variable called `year` which has the value of `2021` for each observation of `rankings_2021` and the value of `2022` for each observation of `rankings_2022`. Then use `bind_rows()` to combine `rankings_2021` and `rankings_2022`.  
 
